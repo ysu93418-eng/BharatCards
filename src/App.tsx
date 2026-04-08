@@ -36,7 +36,7 @@ import {
   Info
 } from 'lucide-react';
 import Modal from './components/Modal';
-import logoImg from './assets/logoi.jpg';
+import logoImg from './assets/logo.jpg';
 
 type Brand = 'google' | 'apple' | 'amazon';
 
@@ -425,11 +425,11 @@ export default function App() {
       <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="relative flex items-center justify-center w-14 h-14 overflow-hidden rounded-xl">
+            <div className="relative flex items-center justify-center w-20 h-20 overflow-hidden rounded-xl">
               <img
                 src={logoImg}
-                alt="Logo"
-                className="w-full h-full object-cover"
+                alt="BharatCards Logo"
+                className="w-full h-full object-contain p-1"
                 />
             </div>
             
